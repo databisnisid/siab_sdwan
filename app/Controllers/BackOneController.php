@@ -23,17 +23,23 @@ class BackOneController extends BaseController
         $project = new Project();
         $cs = new ConnectionStatus();
         $project_ids = $project->get_project_id_by_name();
+        $data_all_project = [];
+        foreach ($project_ids as $project_id) {
+            $data_per_project = $bo->get_backone_by_project_id($project_id['id']);
+            $data_all_project = array_merge($data_all_project, $data_per_project);
+        }
         #print_r($project_ids);
         #print_r($project_ids[0]['id']);
-        $data['data'] = $bo->get_backone_by_project_id($project_ids[0]['id']);
-        #print_r($data);
+        $data['data'] = $data_all_project;
+        #$data['data'] = $bo->get_backone_by_project_id($project_ids[0]['id']);
+        print_r($data);
         $connection_status = $cs->get_all();
         $conn_stat = [];
         foreach($connection_status as $conn) {
             $conn_stat[$conn['id']] = $conn['name'];
         }
         $data['connection_status'] = $conn_stat;
-        //var_dump($data['connection_status']);
+        #var_dump($data['connection_status']);
         $data['google_data'] = $google_data;
         #exit();
 

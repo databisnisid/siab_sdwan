@@ -1,0 +1,12 @@
+CRITICAL - 2022-07-06 18:44:52 --> Unsupported operand types
+in APPPATH/Controllers/BackOneController.php on line 28.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(56): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-06 18:44:58 --> Unsupported operand types
+in APPPATH/Controllers/Backonecontroller.php on line 28.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(56): CodeIgniter\CodeIgniter->run()
