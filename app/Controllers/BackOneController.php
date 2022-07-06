@@ -32,7 +32,7 @@ class BackOneController extends BaseController
         #print_r($project_ids[0]['id']);
         $data['data'] = $data_all_project;
         #$data['data'] = $bo->get_backone_by_project_id($project_ids[0]['id']);
-        print_r($data);
+        #print_r($data);
         $connection_status = $cs->get_all();
         $conn_stat = [];
         foreach($connection_status as $conn) {
