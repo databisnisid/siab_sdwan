@@ -60,7 +60,8 @@ function initMap() {
   var locations = [
 <?php
     foreach($data as $d) {
-        echo "['" . $d['name'] . "'," . $d['geolocation'] . ",", $d['connection_status_id'] . ", '" . $d['connection_type_id'] . "'],\n";
+        echo "['" . $d['name'] . "'," . $d['geolocation'] . ",'", $d['ipaddress'] . "', " . $d['connection_type_id']
+            . ", " . $d['ping_status'] . "],\n";
     };
 ?>
    ];
@@ -104,25 +105,32 @@ function initMap() {
       //legend_content[locations[count][0]].counter += 1
       //console.log(legend_content[locations[count][0]].counter)
 
+      let contentString =
+          '<div id="content">' +
+          '<div id="siteNotice"></div>' +
+          '<h2 id="firstHeading" class="firstHeading">' + locations[count][0] + '</h2>' +
+          '<div id="bodyContent">' +
+          '<p>' +
+          '<strong>STATUS:</strong> ' + locations[count][5] + '<br />' +
+          '<strong>IP:</strong> ' + locations[count][3] + '<br />' +
+          '</p>' +
+          '</div>';
+
       google.maps.event.addListener(marker, 'click', (function (marker, count) {
           return function () {
-              infowindow.setContent(locations[count][0]);
+              infowindow.setContent(contentString);
               infowindow.open(map, marker);
           }
       })(marker, count));
 
-      marker.setIcon(icons['sdwan'].icon);
-      /*
-      if (locations[count][3] == 1) {
-          if (locations[count][4] == 1) {
-              marker.setIcon(icons['sdwan'].icon);
-          } else {
-              marker.setIcon(icons['vpnip'].icon);
-          }
+      //marker.setIcon(icons['sdwan'].icon);
+
+      if (locations[count][5] == 1) {
+          marker.setIcon(icons['sdwan'].icon);
       } else {
           marker.setIcon(icons['nolive'].icon);
       }
-      */
+
   }
 
     /*
