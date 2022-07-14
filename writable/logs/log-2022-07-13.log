@@ -1,0 +1,133 @@
+CRITICAL - 2022-07-13 22:49:02 --> syntax error, unexpected '<', expecting '('
+in APPPATH/Views/index.php on line 59.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH/Controllers/Backonecontroller.php(48): view('index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->index('8')
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(56): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-13 22:51:51 --> Too few arguments to function App\Controllers\BackOneController::index(), 0 passed in /Users/dsutanto/PhpstormProjects/siab/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/Backonecontroller.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(56): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-13 22:51:57 --> Too few arguments to function App\Controllers\BackOneController::index(), 0 passed in /Users/dsutanto/PhpstormProjects/siab/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/Backonecontroller.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(56): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-13 22:52:04 --> Too few arguments to function App\Controllers\BackOneController::index(), 0 passed in /Users/dsutanto/PhpstormProjects/siab/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/Backonecontroller.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(56): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-13 22:53:01 --> Too few arguments to function App\Controllers\BackOneController::index(), 0 passed in /Users/dsutanto/PhpstormProjects/siab/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/Backonecontroller.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(56): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-13 22:58:26 --> syntax error, unexpected '<', expecting '('
+in APPPATH/Views/index.php on line 59.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH/Controllers/BackOneController.php(52): view('index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-13 23:08:05 --> Too few arguments to function App\Controllers\BackOneController::index(), 0 passed in /Users/dsutanto/PhpstormProjects/siab/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/BackOneController.php on line 13.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->index()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-13 23:09:11 --> syntax error, unexpected 'unset' (T_UNSET)
+in APPPATH/Controllers/BackOneController.php on line 15.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/BackOneController.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BackOneController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BackOneController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\BackOneController')
+ 5 SYSTEMPATH/CodeIgniter.php(846): class_exists('\\App\\Controllers\\BackOneController', true)
+ 6 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-13 23:09:44 --> Use of undefined constant project_id - assumed 'project_id' (this will throw an Error in a future version of PHP)
+in APPPATH/Models/Project.php on line 70.
+ 1 APPPATH/Models/Project.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant project_id - assumed \'project_id\' (this will throw an Error in a future version of PHP)', 'APPPATH/Models/Project.php', 70, [...])
+ 2 APPPATH/Controllers/BackOneController.php(31): App\Models\Project->get_project_by_id(2)
+ 3 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->index()
+ 4 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-13 23:10:02 --> Use of undefined constant project_id - assumed 'project_id' (this will throw an Error in a future version of PHP)
+in APPPATH/Models/Project.php on line 70.
+ 1 APPPATH/Models/Project.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant project_id - assumed \'project_id\' (this will throw an Error in a future version of PHP)', 'APPPATH/Models/Project.php', 70, [...])
+ 2 APPPATH/Controllers/Backonecontroller.php(31): App\Models\Project->get_project_by_id('2')
+ 3 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->index('2')
+ 4 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(56): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-13 23:21:22 --> Too few arguments to function App\Controllers\BackOneController::project(), 0 passed in /Users/dsutanto/PhpstormProjects/siab/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/BackOneController.php on line 59.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->project()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-13 23:21:30 --> Too few arguments to function App\Controllers\BackOneController::project(), 0 passed in /Users/dsutanto/PhpstormProjects/siab/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/BackOneController.php on line 59.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->project()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-13 23:21:32 --> Too few arguments to function App\Controllers\BackOneController::project(), 0 passed in /Users/dsutanto/PhpstormProjects/siab/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/BackOneController.php on line 59.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->project()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-13 23:21:36 --> Too few arguments to function App\Controllers\BackOneController::project(), 0 passed in /Users/dsutanto/PhpstormProjects/siab/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/BackOneController.php on line 59.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->project()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-13 23:23:08 --> Too few arguments to function App\Controllers\BackOneController::project(), 0 passed in /Users/dsutanto/PhpstormProjects/siab/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/BackOneController.php on line 59.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->project()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-13 23:35:56 --> syntax error, unexpected '$project_all' (T_VARIABLE), expecting '('
+in APPPATH/Views/index.php on line 59.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH/Controllers/BackOneController.php(55): view('index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')
+CRITICAL - 2022-07-13 23:37:43 --> syntax error, unexpected '$project' (T_VARIABLE), expecting '('
+in APPPATH/Views/index.php on line 59.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('index', [], true)
+ 3 APPPATH/Controllers/BackOneController.php(55): view('index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\BackOneController->index()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BackOneController))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(43): require_once('FCPATH/index.php')

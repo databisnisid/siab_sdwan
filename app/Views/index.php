@@ -34,10 +34,39 @@ h1 {
   vertical-align: middle;
 }
     </style>
+
+    <script>
+        /*
+            setTimeout(function(){
+                window.location.reload(1);
+            }, 5000);
+        */
+        function updateMap(value) {
+            location.href = '/' + value;
+            console.log(value);
+        }
+    </script>
+
 </head>
 <body>
 <div id="map"></div>
 <div id="siab_sdwan" style="padding-left: 10px"><h1>&nbsp;&nbsp;PT. SIAB SDWAN Network&nbsp;&nbsp;</h1></div>
+<div id="form">
+    <form style="padding-right: 10px;">
+        <select name="mapchange" onchange="updateMap(this.options[this.selectedIndex].value)">
+            <option value="0">ALL</option>
+            <?php
+            foreach ($project as $p) {
+                if ($project_id_selected == $p['id']) {
+                    echo "<option value=\"" . $p['id'] . "\" selected>" . $p['name'] . "</option>\n";
+                } else {
+                    echo "<option value=\"" . $p['id'] . "\">" . $p['name'] . "</option>\n";
+                }
+            }
+            ?>
+        </select>
+    </form>
+</div>
 
 <script type="text/javascript">
 function initMap() {
@@ -153,6 +182,11 @@ function initMap() {
     // Title
     const siab_sdwan = document.getElementById("siab_sdwan");
     map.controls[google.maps.ControlPosition.LEFT_BOTTOM].push(siab_sdwan);
+
+
+    // Form Select
+    const form = document.getElementById("form");
+    map.controls[google.maps.ControlPosition.RIGHT_TOP].push(form);
 
 }
 

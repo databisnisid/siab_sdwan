@@ -10,8 +10,9 @@ use App\Models\ConnectionStatus;
 
 class BackOneController extends BaseController
 {
-    public function index()
+    public function index($id=0)
     {
+
         //ini_set('display_errors', 1);
         $google_data = [
         'MAPS_CENTER' => 'lat: -1.233982000061532, lng: 116.83728437200422',
@@ -22,7 +23,14 @@ class BackOneController extends BaseController
         $bo = new BackOne();
         $project = new Project();
         $cs = new ConnectionStatus();
-        $project_ids = $project->get_project_id_by_name();
+        $project_all = $project->get_all();
+        if ($id == 0) {
+            $project_ids = $project->get_project_by_name();
+            #echo $id;
+        } else {
+            $project_ids = $project->get_project_by_id($id);
+            #echo $id;
+        }
         $data_all_project = [];
         foreach ($project_ids as $project_id) {
             $data_per_project = $bo->get_backone_by_project_id($project_id['id']);
@@ -31,8 +39,10 @@ class BackOneController extends BaseController
         #print_r($project_ids);
         #print_r($project_ids[0]['id']);
         $data['data'] = $data_all_project;
+        $data['project'] = $project_all;
+        $data['project_id_selected'] = $id;
         #$data['data'] = $bo->get_backone_by_project_id($project_ids[0]['id']);
-        #print_r($data);
+        #print_r($project_all);
         $connection_status = $cs->get_all();
         $conn_stat = [];
         foreach($connection_status as $conn) {

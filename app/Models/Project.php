@@ -41,21 +41,33 @@ class Project extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    public function get_all() {
+    public function get_all($name='SIAB') {
         $db      = \Config\Database::connect();
         $builder = $db->table($this->table);
+        $builder->like('name', $name);
         $query = $builder->get()->getResultArray();
 
         return $query;
     }
 
-    public function get_project_id_by_name($name='SIAB') {
+    public function get_project_by_name($name='SIAB') {
         $db      = \Config\Database::connect();
         $builder = $db->table($this->table);
         #$sql = "SELECT * FROM " . $this->table . " WHERE name like " . $name . "%";
         #$builder->select($sql);
         $builder->like('name', $name);
         $query = $builder->get()->getResultArray();
+
+        return $query;
+    }
+
+    public function get_project_by_id($project_id=7) {
+        $db      = \Config\Database::connect();
+        $builder = $db->table($this->table);
+        #$sql = "SELECT * FROM " . $this->table . " WHERE name like " . $name . "%";
+        #$builder->select($sql);
+        #$builder->getWhere(['id' => project_id]);
+        $query = $builder->getWhere(['id' => $project_id])->getResultArray();
 
         return $query;
     }
